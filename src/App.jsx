@@ -87,7 +87,6 @@ const App = () => {
     indexOfLastItem
   );
 
-  // Calculate endItem without Math.min
   const endItem = indexOfLastItem > totalItems ? totalItems : indexOfLastItem;
 
   const handlePageChange = (page) => {

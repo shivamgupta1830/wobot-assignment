@@ -12,12 +12,16 @@ const Table = ({
   setLocationFilter,
   setStatusFilter,
   handleStatusToggle,
+  statusFilter,
+  locationFilter,
 }) => {
   return (
     <>
       <FilterSection
         locationOptions={locationOptions}
         statusOptions={statusOptions}
+        statusFilter={statusFilter}
+        locationFilter={locationFilter}
         setLocationFilter={setLocationFilter}
         setStatusFilter={setStatusFilter}
       />
