@@ -1,0 +1,97 @@
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.camera-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 1);
+}
+
+.camera-table th {
+  padding: 16px 12px;
+  text-transform: uppercase;
+  color: rgb(126, 126, 126);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  border-bottom: 0.5px solid rgba(126, 126, 126, 0.1);
+}
+
+.camera-table td {
+  padding: 16px 12px;
+  border-bottom: 0.5px solid rgba(160, 160, 160, 0.1);
+  color: rgb(84, 84, 84);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+}
+
+.camera-table tbody tr {
+  transition: background-color 0.3s;
+}
+
+.camera-table tbody tr:hover {
+  background-color: rgba(243, 243, 244, 1);
+}
+
+.camera-table input[type="checkbox"] {
+  cursor: pointer;
+  accent-color: rgb(126, 126, 126);
+  cursor: pointer;
+}
+
+.camera-table input[type="checkbox"]:checked {
+  background-color: rgb(126, 126, 126);
+}
+
+.delete-button {
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  color: rgba(220, 53, 69, 1);
+  background: rgba(220, 53, 69, 0.15);
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.health-column {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 7px;
+}
+
+.cloud-and-device {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.status {
+  padding: 5px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.inactive-status {
+  background-color: rgba(84, 84, 84, 0.1);
+}
+.active-status {
+  background-color: rgba(2, 146, 98, 0.1);
+  color: rgba(2, 146, 98, 1);
+}
+
+@media (max-width: 720px) {
+  .table-container {
+    width: 100%;
+    max-height: 80vh;
+  }
+
+  .camera-table {
+    min-width: 600px;
+  }
+}
